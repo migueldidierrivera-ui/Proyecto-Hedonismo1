@@ -146,7 +146,7 @@ border:none;
 
 box-shadow:0px 6px 0px #8C0B25;
 
-font-size:42px;
+font-size:40px;
 
 color:#69001C;
 
@@ -169,7 +169,7 @@ margin-bottom:30px;
 
 .descripcion{
 
-border:4px solid #8C0B25;
+border:4px solid #c9adb2;
 
 border-radius:10px;
 
@@ -188,19 +188,19 @@ gap:18px;
 
 .btn2{
 
+display:flex;
+justify-content:center;
+align-items:center;
+
 height:80px;
 
 background:#EF999E;
-
-border:none;
-
 box-shadow:0px 6px 0px #8C0B25;
 
 font-size:35px;
-
-cursor:pointer;
-
 color:#69001C;
+
+text-decoration:none;
 
 transition:.2s;
 
@@ -303,5 +303,102 @@ box-shadow:
 
     margin-top:15px;  
     margin-bottom:15px;
+
+}
+.paginaHedonismo{
+
+width:95%;
+
+margin:auto;
+
+padding:25px;
+
+}
+
+.imagenPrincipal{
+
+width:100%;
+
+height:330px;
+
+object-fit:cover;
+
+border-radius:8px;
+
+box-shadow:0px 4px 12px rgba(0,0,0,.4);
+
+margin-bottom:30px;
+
+}
+
+.tituloCaja{
+
+background:#EF999E;
+
+padding:25px;
+
+text-align:center;
+
+font-size:25px;
+
+color:#69001C;
+
+box-shadow:0px 6px 0px #8C0B25;
+
+margin-bottom:30px;
+
+}
+
+.texto{
+
+background:#C6A29C;
+
+padding:35px;
+
+font-size:22px;
+
+line-height:1.8;
+
+text-align:justify;
+
+border-radius:8px;
+
+box-shadow:0px 5px 10px rgba(0,0,0,.25);
+
+margin-bottom:30px;
+
+}
+
+.texto h3{
+
+margin-bottom:15px;
+
+color:#69001C;
+
+}
+
+.volver{
+
+display:inline-block;
+
+padding:18px 30px;
+
+background:#EF999E;
+
+color:#69001C;
+
+text-decoration:none;
+
+font-size:22px;
+
+box-shadow:0px 6px 0px #8C0B25;
+
+transition:.3s;
+
+}
+
+.volver:hover{
+
+transform:translateY(-3px);
 
 }
