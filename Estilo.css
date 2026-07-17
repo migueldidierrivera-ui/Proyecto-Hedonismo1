@@ -413,8 +413,54 @@ transform:translateY(-3px);
 
     border-radius:20px;
 
-    box-shadow:0 15px 50px rgba(255, 151, 151, 0.959);
+    box-shadow:0 15px 50px rgba(0,0,0,.3);
 
     margin-bottom:30px;
 
+}
+.descripcion{
+
+    width:100%;
+
+    background:#510202ef;
+
+    padding:35px;
+
+    border-radius:12px;
+
+    box-shadow:0px 8px 18px rgba(0,0,0,.25);
+
+}
+
+/* Texto de la descripción */
+
+.descripcion p{
+
+    font-family: Georgia, serif;
+
+    font-size:24px;
+
+    color:#F8D6D8;
+
+    text-align:justify;
+
+    line-height:1.8;
+
+}
+
+/* Título "Objetivo" */
+
+.descripcion h3{
+
+    font-family:'Pixelify Sans', Georgia, serif;
+
+    font-size:38px;
+
+    color:#EF999E;
+
+    text-align:center;
+
+    margin:15px 0;
+
+    text-shadow:2px 2px 5px rgba(0,0,0,.4);
 }
