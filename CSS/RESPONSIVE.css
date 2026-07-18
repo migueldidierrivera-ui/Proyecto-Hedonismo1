@@ -1,0 +1,103 @@
+/*=====================
+CELULARES
+=====================*/
+
+@media (max-width:768px){
+
+    header{
+
+        height:auto;
+
+        padding:20px;
+
+        text-align:center;
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+    header h1{
+
+        font-size:28px;
+
+    }
+
+    .contenedor{
+
+        padding:20px;
+
+        gap:25px;
+
+    }
+
+    .logo{
+
+        width:220px;
+
+        height:220px;
+
+    }
+
+    .titulo{
+
+        font-size:28px;
+
+        height:auto;
+
+        padding:20px;
+
+    }
+
+    .descripcion{
+
+        padding:25px;
+
+    }
+
+    .descripcion p{
+
+        font-size:18px;
+
+    }
+
+    .descripcion h3{
+
+        font-size:30px;
+
+    }
+
+    .opciones{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .btn{
+
+        font-size:28px;
+
+    }
+
+    .btn2{
+
+        font-size:26px;
+
+        height:70px;
+
+    }
+
+    .integrantes{
+
+        height:auto;
+
+    }
+
+    .integrantes div{
+
+        font-size:20px;
+
+    }
+
+}

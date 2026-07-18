@@ -1,0 +1,57 @@
+header h1{
+    font-family: 'Cinzel', serif;
+    font-size: 38px;
+    color: #69001C;
+}
+
+/* Títulos de secciones */
+.titulo,
+.tituloCaja,
+.descripcion h3,
+.texto h3{
+    font-family: 'Cinzel', serif;
+    color: #69001C
+}
+
+/* Botones */
+.btn,
+.btn2{
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+}
+
+/* Párrafos */
+.descripcion p,
+.texto{
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Lista de integrantes */
+.integrantes{
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+}
+.titulo{
+
+    width:100%;
+
+    background:#EF999E;
+
+    color:#69001C;
+
+    font-family:'Cinzel', serif;
+
+    font-size:40px;
+
+    text-align:center;
+
+    padding:22px;
+
+    margin-bottom:30px;
+
+    box-shadow:0px 6px 0px #8C0B25;
+
+}

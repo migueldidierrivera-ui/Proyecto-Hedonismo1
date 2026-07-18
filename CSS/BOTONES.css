@@ -1,0 +1,53 @@
+.btn,
+.btn2{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#EF999E;
+    color:#69001C;
+
+    font-size:35px;
+
+    text-decoration:none;
+
+    box-shadow:0px 6px 0px #8C0B25;
+
+    transition:.2s;
+
+}
+
+/* Animación al pasar el mouse */
+
+.btn:hover,
+.btn2:hover{
+
+    transform:translateY(-3px);
+
+    background:#f8aab1;
+
+}
+
+/*=====================
+BOTONES LATERALES
+=====================*/
+
+.btn{
+
+    width:100%;
+    height:70px;
+
+    margin-bottom:18px;
+
+}
+
+/*=====================
+BOTONES DEL MENÚ
+=====================*/
+
+.btn2{
+
+    height:80px;
+
+}
