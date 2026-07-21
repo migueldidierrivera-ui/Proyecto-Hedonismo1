@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Falacias - Proyecto Hedonismo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Paleta de colores inspirada en el Proyecto Hedonismo */
+            --bg-main: #f8fafc;
+            --bg-card: #ffffff;
+            --primary: #2e1065;        /* Púrpura profundo elegante */
+            --primary-light: #4c1d95;  /* Púrpura medio */
+            --primary-subtle: #f3e8ff; /* Fondo púrpura muy suave */
+            --accent: #d97706;         /* Dorado/Ámbar cálido */
+            --accent-light: #fef3c7;   /* Dorado suave */
+            --text-dark: #0f172a;      /* Texto principal */
+            --text-muted: #475569;     /* Texto secundario */
+            --border-color: #e2e8f0;   /* Bordes sutiles */
+            --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+            --shadow-lg: 0 10px 25px -5px rgba(46, 16, 101, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+            --radius-lg: 16px;
+            --radius-md: 12px;
+            --radius-sm: 8px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        /* HEADER SUPERIOR */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, #1e1b4b 100%);
+            color: #ffffff;
+            padding: 48px 24px 40px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent), #f59e0b, var(--accent));
+        }
+
+        .header-badge {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.12);
+            color: #fef08a;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 6px 16px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            max-width: 650px;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+
+        /* CONTENEDOR PRINCIPAL */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto 0;
+            padding: 0 20px;
+        }
+
+        /* SECCIÓN DE LAS 5 FALACIAS */
+        .falacias-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        .falacia-card {
+            background-color: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow-sm);
+            padding: 28px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .falacia-card:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+            border-color: #c084fc;
+        }
+
+        .falacia-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 6px;
+            height: 100%;
+            background: var(--primary-light);
+            border-radius: 4px 0 0 4px;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .falacia-number {
+            background-color: var(--primary-subtle);
+            color: var(--primary);
+            font-size: 1.1rem;
+            font-weight: 800;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .falacia-title-input {
+            width: 100%;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: var(--primary);
+            border: 2px solid transparent;
+            background-color: transparent;
+            padding: 6px 10px;
+            border-radius: var(--radius-sm);
+            transition: all 0.2s;
+            font-family: inherit;
+        }
+
+        .falacia-title-input:focus, .falacia-title-input:hover {
+            background-color: #f8fafc;
+            border-color: #cbd5e1;
+            outline: none;
+        }
+
+        /* CAMPOS DE TEXTO / EXPLICACIÓN */
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .input-group label {
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .input-group label .icon {
+            color: var(--accent);
+        }
+
+        .falacia-textarea {
+            width: 100%;
+            min-height: 90px;
+            padding: 12px 16px;
+            font-family: inherit;
+            font-size: 0.98rem;
+            color: var(--text-dark);
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: var(--radius-md);
+            resize: vertical;
+            transition: all 0.2s ease;
+            line-height: 1.5;
+        }
+
+        .falacia-textarea:focus {
+            outline: none;
+            background-color: #ffffff;
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 3px rgba(76, 29, 149, 0.12);
+        }
+
+        .falacia-textarea::placeholder {
+            color: #94a3b8;
+        }
+
+        .example-box {
+            background-color: #fffbe0;
+            border: 1px dashed #fde047;
+            border-radius: var(--radius-md);
+            padding: 12px 16px;
+            margin-top: 4px;
+        }
+
+        /* PIE DE PÁGINA */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 640px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            .falacia-card {
+                padding: 20px 16px;
+            }
+            .falacia-title-input {
+                font-size: 1.15rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABECERA PRINCIPAL -->
+    <header>
+        <span class="header-badge">Proyecto Hedonismo</span>
+        <h1>Tipos de Falacias</h1>
+        <p>Espacio interactivo para definir, analizar y contrastar 5 falacias argumentativas clave.</p>
+    </header>
+
+    <!-- CONTENEDOR DE ESPACIOS -->
+    <main class="container">
+        <div class="falacias-grid">
+
+            <!-- ESPACIO 1 -->
+            <article class="falacia-card">
+                <div class="card-header">
+                    <span class="falacia-number">01</span>
+                    <input type="text" class="falacia-title-input" value="Falacia Ad Hominem (Ataque a la Persona)" placeholder="Nombre de la Falacia 1...">
+                </div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <label><span class="icon">🔍</span> Explicación / Definición:</label>
+                        <textarea class="falacia-textarea" placeholder="Explica en qué consiste esta falacia y por qué su razonamiento es incorrecto...">Consiste en atacar, descalificar o insultar a la persona que emite un argumento en lugar de refutar la verdad o validez del argumento en sí mismo.</textarea>
+                    </div>
+                    <div class="input-group">
+                        <label><span class="icon">💡</span> Ejemplo Práctico:</label>
+                        <textarea class="falacia-textarea example-box" placeholder="Escribe un ejemplo claro de esta falacia...">&quot;No podemos aceptar la postura sobre el hedonismo propuesta por ese filósofo porque su vida personal fue muy desordenada.&quot;</textarea>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ESPACIO 2 -->
+            <article class="falacia-card">
+                <div class="card-header">
+                    <span class="falacia-number">02</span>
+                    <input type="text" class="falacia-title-input" value="Falacia Naturalista (Del Es al Debe)" placeholder="Nombre de la Falacia 2...">
+                </div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <label><span class="icon">🔍</span> Explicación / Definición:</label>
+                        <textarea class="falacia-textarea" placeholder="Explica en qué consiste esta falacia y por qué su razonamiento es incorrecto...">Pretende deducir un juicio moral o un 'deber ser' a partir de un hecho natural o 'lo que es'. Muy común al derivar la ética únicamente del placer biológico.</textarea>
+                    </div>
+                    <div class="input-group">
+                        <label><span class="icon">💡</span> Ejemplo Práctico:</label>
+                        <textarea class="falacia-textarea example-box" placeholder="Escribe un ejemplo claro de esta falacia...">&quot;Como la búsqueda del placer es una respuesta biológica natural, entonces todo lo que nos cause placer es éticamente bueno.&quot;</textarea>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ESPACIO 3 -->
+            <article class="falacia-card">
+                <div class="card-header">
+                    <span class="falacia-number">03</span>
+                    <input type="text" class="falacia-title-input" value="Falacia del Hombre de Paja (Strawman)" placeholder="Nombre de la Falacia 3...">
+                </div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <label><span class="icon">🔍</span> Explicación / Definición:</label>
+                        <textarea class="falacia-textarea" placeholder="Explica en qué consiste esta falacia y por qué su razonamiento es incorrecto...">Consiste en caricaturizar, distorsionar o exagerar el argumento del oponente para que sea más fácil de atacar y refutar.</textarea>
+                    </div>
+                    <div class="input-group">
+                        <label><span class="icon">💡</span> Ejemplo Práctico:</label>
+                        <textarea class="falacia-textarea example-box" placeholder="Escribe un ejemplo claro de esta falacia...">&quot;Los hedonistas dicen que debemos vivir solo buscando placeres descontrolados sin importar las consecuencias para nadie.&quot;</textarea>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ESPACIO 4 -->
+            <article class="falacia-card">
+                <div class="card-header">
+                    <span class="falacia-number">04</span>
+                    <input type="text" class="falacia-title-input" value="Falacia Ad Populum (Apelación a la Mayoría)" placeholder="Nombre de la Falacia 4...">
+                </div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <label><span class="icon">🔍</span> Explicación / Definición:</label>
+                        <textarea class="falacia-textarea" placeholder="Explica en qué consiste esta falacia y por qué su razonamiento es incorrecto...">Afirma que una afirmación es verdadera o moralmente correcta simplemente porque la mayoría de la gente la apoya o consume.</textarea>
+                    </div>
+                    <div class="input-group">
+                        <label><span class="icon">💡</span> Ejemplo Práctico:</label>
+                        <textarea class="falacia-textarea example-box" placeholder="Escribe un ejemplo claro de esta falacia...">&quot;Si la mayoría de jóvenes busca el entretenimiento inmediato en redes sociales, entonces ese estilo de vida debe ser la meta ideal.&quot;</textarea>
+                    </div>
+                </div>
+            </article>
+
+            <!-- ESPACIO 5 -->
+            <article class="falacia-card">
+                <div class="card-header">
+                    <span class="falacia-number">05</span>
+                    <input type="text" class="falacia-title-input" value="Falacia de Falsa Dicotómica (Falso Dilema)" placeholder="Nombre de la Falacia 5...">
+                </div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <label><span class="icon">🔍</span> Explicación / Definición:</label>
+                        <textarea class="falacia-textarea" placeholder="Explica en qué consiste esta falacia y por qué su razonamiento es incorrecto...">Presenta únicamente dos opciones extremas como las únicas posibles, ignorando posturas intermedias o matices éticos.</textarea>
+                    </div>
+                    <div class="input-group">
+                        <label><span class="icon">💡</span> Ejemplo Práctico:</label>
+                        <textarea class="falacia-textarea example-box" placeholder="Escribe un ejemplo claro de esta falacia...">&quot;O vives disfrutando cada segundo sin pensar en el futuro, o vives una vida de sufrimiento y represión moral.&quot;</textarea>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Aristocoders &copy; Proyecto Hedonismo — Plantilla de Análisis de Falacias</p>
+    </footer>
+
+</body>
+</html>
