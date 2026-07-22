@@ -78,16 +78,40 @@
     top: -20px;
 }
 
-/* Cápsula del título de cada falacia */
+/* 1. CÁPSULAS DE TÍTULOS (Alto y Ancho idénticos para las 5) */
 .titulo-falacia {
     background-color: #ffffff;
     border: 3px solid #000000;
     border-radius: 20px;
-    padding: 8px 12px;
+    padding: 5px 10px;
     text-align: center;
     box-shadow: 3px 3px 0px #000000;
-    width: 90%;
+    
+    width: 200px;         /* <--- ANCHO FIJO */
+    height: 55px;         /* <--- ALTO FIJO */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
     z-index: 1;
+}
+
+/* 2. CUADROS DE CONTENIDO (Alto y Ancho idénticos para los 5) */
+.contenido-falacia {
+    background-color: #ffffff;
+    border: 3px solid #000000;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 4px 4px 0px #000000;
+    
+    width: 220px;         /* <--- ANCHO FIJO */
+    height: 320px;        /* <--- ALTO FIJO PARA TODOS */
+    
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 0.85rem;
+    overflow-y: auto;     /* Muestra barra de scroll solo si el texto llega a salirse */
 }
 
 .titulo-falacia h3 {
