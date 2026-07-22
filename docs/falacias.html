@@ -2,199 +2,107 @@
 <html lang="es">
 
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Tipos de Falacias</title>
-
-<link rel="stylesheet" href="CSS/main.css">
-<link rel="stylesheet" href="CSS/PÁGINA HEDONISMO.css">
-
-<style>
-    /* Estilos organizadores para las tarjetas de falacias */
-    .falacias-contenedor {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        margin-top: 20px;
-    }
-
-    .falacia-card {
-        background-color: #ffffff;
-        border: 1px solid #e2e8f0;
-        border-left: 6px solid #4c1d95; /* Color púrpura del proyecto */
-        border-radius: 12px;
-        padding: 24px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-
-    .falacia-card:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 6px 18px rgba(76, 29, 149, 0.12);
-    }
-
-    .falacia-card h3 {
-        color: #2e1065;
-        font-size: 1.3rem;
-        margin-bottom: 12px;
-        border-bottom: 2px solid #f3e8ff;
-        padding-bottom: 8px;
-    }
-
-    .falacia-definicion {
-        font-size: 1rem;
-        color: #334155;
-        line-height: 1.5;
-        margin-bottom: 16px;
-    }
-
-    /* Caja de Ejemplo */
-    .bloque-ejemplo {
-        background-color: #f8fafc;
-        border: 1px solid #cbd5e1;
-        border-radius: 8px;
-        padding: 12px 16px;
-        margin-bottom: 12px;
-    }
-
-    .bloque-ejemplo .etiqueta {
-        color: #4c1d95;
-        font-weight: bold;
-        display: block;
-        margin-bottom: 4px;
-    }
-
-    /* Caja del Por Qué */
-    .bloque-porque {
-        background-color: #fffbe0; /* Fondo amarillo cálido */
-        border: 1px dashed #fde047;
-        border-radius: 8px;
-        padding: 12px 16px;
-    }
-
-    .bloque-porque .etiqueta {
-        color: #b45309; /* Tono dorado/marrón */
-        font-weight: bold;
-        display: block;
-        margin-bottom: 4px;
-    }
-</style>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Falacias</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/PÁGINA HEDONISMO.css">
 </head>
 
 <body>
 
-<header>
+    <header>
+        <div class="cuadrito"></div>
+        <h1>Tipos de Falacias</h1>
+    </header>
 
-<div class="cuadrito"></div>
+    <main class="paginaHedonismo">
 
-<h1>Tipos de Falacias</h1>
+        <!-- MAPA CONCEPTUAL -->
+        <div class="mapa-conceptual">
 
-</header>
+            <!-- Título Principal (Nodo Raíz) -->
+            <div class="nodo-principal">
+                <h2>5 Falacias sobre el Hedonismo</h2>
+            </div>
 
-<main class="paginaHedonismo">
+            <div class="linea-vertical-principal"></div>
 
-<div class="tituloCaja">
+            <!-- Contenedor de las Ramas / Falacias -->
+            <div class="contenedor-ramas">
 
-<h2>5 Falacias Argumentativas</h2>
+                <!-- 1. Falacia Ad Hominem -->
+                <div class="tarjeta-falacia">
+                    <div class="titulo-falacia">
+                        <h3>1. Falacia Ad Hominem</h3>
+                    </div>
+                    <div class="linea-intermedia"></div>
+                    <div class="contenido-falacia">
+                        <p>Descalifica la idea o argumento atacando el carácter, origen o intención de quien lo dice en vez de responder a su punto.</p>
+                        <p><strong>Ejemplo:</strong> "No escuches la reseña de ese creador sobre la cámara; solo dice que es mala porque le cae mal la marca."</p>
+                        <p><strong>¿Por Qué?</strong> Ataca la supuesta intención del creador en lugar de refutar las pruebas técnicas o los problemas reales descritos en la reseña.</p>
+                    </div>
+                </div>
 
-</div>
+                <!-- 2. Falacia Naturalista -->
+                <div class="tarjeta-falacia">
+                    <div class="titulo-falacia">
+                        <h3>2. Falacia Naturalista</h3>
+                    </div>
+                    <div class="linea-intermedia"></div>
+                    <div class="contenido-falacia">
+                        <p>Afirmar que porque algo ocurre de forma natural o Biológica, automáticamente es bueno, correcto o deseable.</p>
+                        <p><strong>Ejemplo:</strong> "Como la búsqueda del placer es una respuesta biológica natural en los seres humanos, entonces todo aquello que nos produzca placer es éticamente bueno."</p>
+                        <p><strong>¿Por Qué?</strong> Confunde un hecho descriptivo con un juicio de valor normativo.</p>
+                    </div>
+                </div>
 
-<div class="falacias-contenedor">
+                <!-- 3. Falacia del Hombre de Paja -->
+                <div class="tarjeta-falacia">
+                    <div class="titulo-falacia">
+                        <h3>3. Hombre de Paja</h3>
+                    </div>
+                    <div class="linea-intermedia"></div>
+                    <div class="contenido-falacia">
+                        <p>Distorsiona o exagera la posición del oponente para hacerla parecer absurda y así poder atacarla más fácilmente.</p>
+                        <p><strong>Ejemplo:</strong> "Si dices que no deberíamos consumir tanto plástico, prácticamente quieres que volvamos a vivir en la Edad de Piedra."</p>
+                        <p><strong>¿Por Qué?</strong> Exagera la idea de reducir el uso de plástico llevándola a un escenario extremo que nadie propuso.</p>
+                    </div>
+                </div>
 
-    <!-- FALACIA 1 -->
-    <article class="falacia-card">
-        <h3>1. Falacia Ad Hominem</h3>
-        <p class="falacia-definicion">
-            Descalifica la idea o argumento atacando el carácter, origen o intención de quien lo dice en vez de responder a su punto.
-        </p>
-        <div class="bloque-ejemplo">
-            <span class="etiqueta">💡 Ejemplo:</span>
-            "No escuches la reseña de ese creador sobre la cámara; solo dice que es mala porque le cae mal la marca."
+                <!-- 4. Falacia Ad Populum -->
+                <div class="tarjeta-falacia">
+                    <div class="titulo-falacia">
+                        <h3>4. Falacia Ad Populum</h3>
+                    </div>
+                    <div class="linea-intermedia"></div>
+                    <div class="contenido-falacia">
+                        <p>Afirma que algo es verdad o está bien solo porque la mayoría de las personas lo apoya o cree en ello.</p>
+                        <p><strong>Ejemplo:</strong> "Somos la marca de teléfonos más vendida del mundo, únete a millones de personas satisfechas."</p>
+                        <p><strong>¿Por Qué?</strong> Asume que el teléfono es de calidad superior solo porque muchas personas lo compran.</p>
+                    </div>
+                </div>
+
+                <!-- 5. Falsa Dicotomía -->
+                <div class="tarjeta-falacia">
+                    <div class="titulo-falacia">
+                        <h3>5. Falsa Dicotomía</h3>
+                    </div>
+                    <div class="linea-intermedia"></div>
+                    <div class="contenido-falacia">
+                        <p>Reduce una situación compleja a solo dos opciones extremas, ignorando cualquier punto medio o alternativa existente.</p>
+                        <p><strong>Ejemplo:</strong> "O apoyas nuestra nueva ley de transporte, o estás a favor del caos en la ciudad."</p>
+                        <p><strong>¿Por Qué?</strong> Elimina cualquier alternativa intermedia, obligándote a elegir entre su postura o un extremo absurdo.</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="bloque-porque">
-            <span class="etiqueta">🔍 ¿Por Qué?</span>
-            "Ataca la supuesta intención del creador en lugar de refutar las pruebas técnicas o los problemas reales descritos en la reseña."
-        </div>
-    </article>
 
-    <!-- FALACIA 2 -->
-    <article class="falacia-card">
-        <h3>2. Falacia Naturalista (Del "Es" al "Debe")</h3>
-        <p class="falacia-definicion">
-            Afirmar que porque algo ocurre de forma natural o biológica, automáticamente es bueno, correcto o deseable.
-        </p>
-        <div class="bloque-ejemplo">
-            <span class="etiqueta">💡 Ejemplo:</span>
-            "Como la búsqueda del placer es una respuesta biológica natural en los seres humanos, entonces todo aquello que nos produzca placer es éticamente bueno."
-        </div>
-        <div class="bloque-porque">
-            <span class="etiqueta">🔍 ¿Por Qué?</span>
-            "Confunde un hecho descriptivo ('la naturaleza funciona así') con un juicio de valor normativo ('así es como moralmente deberíamos actuar')."
-        </div>
-    </article>
+        <br>
+        <a href="index.html" class="volver">⬅ Volver al Inicio</a>
 
-    <!-- FALACIA 3 -->
-    <article class="falacia-card">
-        <h3>3. Falacia del Hombre de Paja (Strawman)</h3>
-        <p class="falacia-definicion">
-            Distorsiona o exagera la posición del oponente para hacerla parecer absurda y así poder atacarla más fácilmente.
-        </p>
-        <div class="bloque-ejemplo">
-            <span class="etiqueta">💡 Ejemplo:</span>
-            Comentario en redes: "Si dices que no deberíamos consumir tanto plástico, prácticamente quieres que volvamos a vivir en la Edad de Piedra."
-        </div>
-        <div class="bloque-porque">
-            <span class="etiqueta">🔍 ¿Por Qué?</span>
-            "Exagera la idea de reducir el uso de plástico llevándola a un escenario extremo que nadie propuso para atacarla fácilmente."
-        </div>
-    </article>
-
-    <!-- FALACIA 4 -->
-    <article class="falacia-card">
-        <h3>4. Falacia Ad Populum (Apelación a la Mayoría)</h3>
-        <p class="falacia-definicion">
-            Afirma que algo es verdad o está bien solo porque la mayoría de las personas lo apoya o cree en ello.
-        </p>
-        <div class="bloque-ejemplo">
-            <span class="etiqueta">💡 Ejemplo:</span>
-            "Somos la marca de teléfonos más vendida del mundo, únete a millones de personas satisfechas."
-        </div>
-        <div class="bloque-porque">
-            <span class="etiqueta">🔍 ¿Por Qué?</span>
-            "Asume que el teléfono es de calidad superior solo porque muchas personas lo compran, ignorando fallas técnicas o alternativas mejores."
-        </div>
-    </article>
-
-    <!-- FALACIA 5 -->
-    <article class="falacia-card">
-        <h3>5. Falacia de Falsa Dicotomía (Falso Dilema)</h3>
-        <p class="falacia-definicion">
-            Reduce una situación compleja a solo dos opciones extremas, ignorando cualquier punto medio o alternativa existente.
-        </p>
-        <div class="bloque-ejemplo">
-            <span class="etiqueta">💡 Ejemplo:</span>
-            Publicación política en X: "O apoyas nuestra nueva ley de transporte, o estás a favor del caos en la ciudad."
-        </div>
-        <div class="bloque-porque">
-            <span class="etiqueta">🔍 ¿Por Qué?</span>
-            "Elimina cualquier alternativa intermedia o mejora a la ley, obligándote a elegir entre su postura o un extremo absurdo."
-        </div>
-    </article>
-
-</div>
-
-<br><br>
-
-<a href="index.html" class="volver">
-
-⬅ Volver al Inicio
-
-</a>
-
-</main>
+    </main>
 
 </body>
 
