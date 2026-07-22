@@ -11,7 +11,7 @@
 
 
 .nodo-principal {
-    background-color: #ffffff;
+    background-color: #EF999E;
     border: 3px solid #000000;
     border-radius: 35px;
     padding: 10px 35px;
@@ -80,7 +80,7 @@
 
 /* 1. CÁPSULAS DE TÍTULOS (Alto y Ancho idénticos para las 5) */
 .titulo-falacia {
-    background-color: #ffffff;
+    background-color: #69001C;
     border: 3px solid #000000;
     border-radius: 20px;
     padding: 5px 10px;
@@ -128,7 +128,7 @@
 
 /* Cuadro con el texto de la falacia */
 .contenido-falacia {
-    background-color: #ffffff;
+    background-color: #C6A29C;
     border: 3px solid #000000;
     border-radius: 12px;
     padding: 15px;
