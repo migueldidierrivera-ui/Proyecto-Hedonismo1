@@ -1,4 +1,12 @@
 
+
+
+body {
+    background-image: url("imagen fondo F.jpg" ); /* Ruta de tu imagen */
+    background-size: cover;                       
+    background-repeat: no-repeat;                 
+    background-position: center center;          
+    background-attachment: fixed;                 
 .mapa-conceptual {
     display: flex;
     flex-direction: column;
