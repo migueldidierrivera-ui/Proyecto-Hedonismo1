@@ -266,3 +266,301 @@ IMÁGENES
     box-shadow:0px 8px 18px rgba(0,0,0,.25);
 
 }
+
+/*========================
+principal actividad xd
+========================*/
+
+.actividad{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:50px 20px;
+
+}
+
+/*========================
+tarejta
+========================*/
+
+.tarjeta{
+
+    width:900px;
+    max-width:100%;
+
+    background:#510202ef;
+
+    border:4px solid #c9adb2;
+    border-radius:15px;
+
+    padding:40px;
+
+    box-shadow:0px 10px 25px rgba(0,0,0,.30);
+
+}
+
+/*========================
+titulo
+========================*/
+
+#titulo{
+
+    font-family:'Cinzel', serif;
+
+    font-size:42px;
+
+    color:#EF999E;
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+/*========================
+intro
+========================*/
+
+.intro{
+
+    font-family:'Merriweather', serif;
+
+    font-size:20px;
+
+    color:#F8D6D8;
+
+    text-align:center;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+/*========================
+barra de porcentaje :VV
+========================*/
+
+.barra{
+
+    width:100%;
+
+    height:15px;
+
+    background:#d4b6ba;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin-bottom:25px;
+
+}
+
+#progreso{
+
+    width:0%;
+
+    height:100%;
+
+    background:#EF999E;
+
+    transition:.5s;
+
+}
+
+/*========================
+contador 
+========================*/
+
+#contador{
+
+    font-family:'Cinzel', serif;
+
+    color:#EF999E;
+
+    font-size:22px;
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+/*========================
+pregunta xd
+========================*/
+
+#pregunta{
+
+    font-family:'Merriweather', serif;
+
+    font-size:27px;
+
+    color:#ffffff;
+
+    line-height:1.7;
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+/*========================
+opciones xd
+========================*/
+
+#opciones{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+    margin-bottom:30px;
+
+}
+
+.opcion{
+
+    background:#EF999E;
+
+    color:#69001C;
+
+    border:none;
+
+    padding:18px;
+
+    font-size:24px;
+
+    font-family:'Cinzel', serif;
+
+    cursor:pointer;
+
+    border-radius:10px;
+
+    box-shadow:0px 6px 0px #8C0B25;
+
+    transition:.25s;
+
+}
+
+.opcion:hover{
+
+    transform:translateY(-4px);
+
+    background:#f8aab1;
+
+}
+
+/*========================
+comenzar actividad xd
+========================*/
+
+#boton{
+
+    display:block;
+
+    margin:auto;
+
+    width:280px;
+
+    height:65px;
+
+    background:#EF999E;
+
+    color:#69001C;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:28px;
+
+    font-family:'Cinzel', serif;
+
+    cursor:pointer;
+
+    box-shadow:0px 6px 0px #8C0B25;
+
+    transition:.25s;
+
+}
+
+#boton:hover{
+
+    transform:translateY(-4px);
+
+    background:#f8aab1;
+
+}
+
+/*========================
+reflexion de la ocpion :v
+========================*/
+
+#reflexion{
+
+    display:none;
+
+    margin-top:35px;
+
+    padding:25px;
+
+    background:rgba(255,255,255,.08);
+
+    border-left:6px solid #EF999E;
+
+    border-radius:10px;
+
+    color:#F8D6D8;
+
+    font-family:'Merriweather', serif;
+
+    line-height:1.8;
+
+    font-size:20px;
+
+}
+
+/*========================
+respsive xd
+========================*/
+
+@media(max-width:768px){
+
+    .tarjeta{
+
+        padding:25px;
+
+    }
+
+    #titulo{
+
+        font-size:32px;
+
+    }
+
+    #pregunta{
+
+        font-size:22px;
+
+    }
+
+    .opcion{
+
+        font-size:20px;
+
+    }
+
+    #boton{
+
+        width:100%;
+
+    }
+
+}
