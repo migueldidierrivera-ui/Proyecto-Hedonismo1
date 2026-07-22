@@ -81,7 +81,6 @@
 /* 1. CÁPSULAS DE TÍTULOS (Alto y Ancho idénticos para las 5) */
 .titulo-falacia {
     background-color: #69001C;
-    color: #000000;
     border: 3px solid #000000;
     border-radius: 20px;
     padding: 5px 10px;
