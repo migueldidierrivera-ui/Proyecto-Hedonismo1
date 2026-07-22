@@ -243,13 +243,13 @@ IMÁGENES
 
 .imagenesSociedad{
 
-    flex:10;
+    flex:1;
 
     display:flex;
 
     flex-direction:column;
 
-    gap:50px;
+    gap:100px;
 
 }
 
