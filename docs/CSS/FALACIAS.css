@@ -1,5 +1,4 @@
 
-/* Contenedor principal */
 .mapa-conceptual {
     display: flex;
     flex-direction: column;
@@ -10,7 +9,7 @@
     box-sizing: border-box;
 }
 
-/* Título principal superior */
+
 .nodo-principal {
     background-color: #ffffff;
     border: 3px solid #000000;
@@ -26,21 +25,22 @@
     font-size: 1.5rem;
 }
 
-/* Línea vertical que sale del título principal */
+
 .linea-vertical-principal {
     width: 3px;
     height: 30px;
     background-color: #000000;
 }
 
-/* Contenedor de las columnas */
+
 .contenedor-ramas {
     display: flex;
     justify-content: center;
     gap: 15px;
     width: 100%;
     position: relative;
-    flex-wrap: wrap; /* Se adapta automáticamente en móviles */
+    flex-wrap: wrap;
+    align-items: stretch; /* <-- Iguala la altura de todas las columnas */
 }
 
 /* Línea horizontal superior en pantallas grandes */
@@ -68,7 +68,7 @@
     margin-top: 20px;
 }
 
-/* Línea conectora que sube hacia la barra horizontal */
+/* Línea conectora superior */
 .tarjeta-falacia::before {
     content: '';
     width: 3px;
@@ -95,7 +95,7 @@
     font-size: 1rem;
 }
 
-/* Línea que conecta la cápsula con el cuadro de contenido */
+/* Línea intermedia */
 .linea-intermedia {
     width: 3px;
     height: 15px;
@@ -113,6 +113,9 @@
     box-sizing: border-box;
     text-align: left;
     font-size: 0.9rem;
+    flex: 1; /* <-- Estira todas las cajas blancas a la misma altura */
+    display: flex;
+    flex-direction: column;
 }
 
 .contenido-falacia p {
