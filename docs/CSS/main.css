@@ -10,10 +10,3 @@
 @import url("RESPONSIVE.css");
 @import url("PÁGINA HEDONISMO.css");
 
-body {
-    background-image: url('../Imagenes/ingles.png'); 
-    background-size: cover;                      
-    background-repeat: no-repeat;                  
-    background-position: center center;            
-    background-attachment: fixed;                 
-} 
