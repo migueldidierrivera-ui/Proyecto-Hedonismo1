@@ -526,12 +526,13 @@ reflexion de la ocpion :v
     font-size:20px;
 
 }
-body {
+
+body.pagina-ingles {
     background-image: url('../Imagenes/ingles.png'); 
-    background-size: cover;                      
+    background-size: cover;                        
     background-repeat: no-repeat;                  
     background-position: center center;            
-    background-attachment: fixed;                 
+    background-attachment: fixed;                  
 }
 /*========================
 respsive xd
