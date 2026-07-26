@@ -534,6 +534,21 @@ body.pagina-ingles {
     background-position: center center;            
     background-attachment: fixed;                  
 }
+
+/* Transparencia SOLO para la caja de texto en la página de inglés */
+body.pagina-ingles .texto {
+    background: rgba(198, 162, 156, 0.80); /* Cambia a 0.70 si lo quieres más transparente */
+    backdrop-filter: blur(8px);             /* Efecto de cristal para leer mejor el texto */
+}
+/* Transparencia para el título SOLO en inglés */
+body.pagina-ingles .tituloCaja {
+    background: rgba(239, 153, 158, 0.85);
+    backdrop-filter: blur(8px);
+}
+
+
+
+
 /*========================
 respsive xd
 ========================*/
