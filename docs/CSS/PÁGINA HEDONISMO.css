@@ -526,7 +526,13 @@ reflexion de la ocpion :v
     font-size:20px;
 
 }
-
+body {
+    background-image: url('../Imagenes/ingles.png'); 
+    background-size: cover;                      
+    background-repeat: no-repeat;                  
+    background-position: center center;            
+    background-attachment: fixed;                 
+}
 /*========================
 respsive xd
 ========================*/
@@ -562,4 +568,5 @@ respsive xd
         width:100%;
 
     }
+
 }
