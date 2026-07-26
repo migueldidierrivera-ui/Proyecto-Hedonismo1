@@ -319,3 +319,44 @@ KEYFRAMES
     }
 
 }
+
+/*=====================
+SIN ANIMACIONES
+=====================*/
+
+.sinAnimacion #intro{
+
+    display:none;
+
+}
+
+.sinAnimacion #pagina{
+
+    opacity:1;
+
+    animation:none;
+
+}
+
+.sinAnimacion .escribir{
+
+    width:100%;
+
+    animation:none;
+
+    border-right:none;
+
+}
+
+.sinAnimacion .logo,
+.sinAnimacion .descripcion,
+.sinAnimacion .btn,
+.sinAnimacion .btn2{
+
+    opacity:1;
+
+    transform:none;
+
+    animation:none;
+
+}
