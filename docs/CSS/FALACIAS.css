@@ -140,8 +140,8 @@
 
 /* Cuadro con el texto de la falacia */
 .contenido-falacia {
-    background-color: #000000;
-    border: 3px solid #ffffff;
+    background-color: #ffffff;
+    border: 3px solid #000000;
     border-radius: 12px;
     padding: 15px;
     box-shadow: 4px 4px 0px #000000;
