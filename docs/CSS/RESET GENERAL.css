@@ -15,7 +15,7 @@ body{
     background-attachment: fixed;
 
     font-family: 'Merriweather', serif;
-    color: white;
+    color: rgb(8, 8, 8);
 }
 img{
     max-width:100%;
