@@ -5,9 +5,17 @@
 }
 
 body{
-    background: #f3c7c9;
+    background:
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+    url("../Imagenes/FONDO.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     font-family: 'Merriweather', serif;
-    color: #69001C;
+    color: white;
 }
 img{
     max-width:100%;
