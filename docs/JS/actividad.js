@@ -285,7 +285,7 @@ function mostrarResultado(){
     if(puntaje == preguntas.length){
 
         mensaje = `
-        <h3>INCREIBLE :D </h3>
+        <h3>INCREÍBLE :D </h3>
 
         <p>
         Has demostrado que comprendes muy bien la diferencia entre el placer inmediato
@@ -312,7 +312,7 @@ function mostrarResultado(){
     else{
 
         mensaje = `
-        <h3>Mal ahi ://</h3>
+        <h3>Mal ahí ://</h3>
 
         <p>
         El hedonismo nos recuerda que no todos los placeres inmediatos producen una
